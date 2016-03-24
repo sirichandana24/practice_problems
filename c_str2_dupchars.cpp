@@ -35,7 +35,7 @@ char* duplicate_chars(char* str)
 	buffer = (int*)calloc(256, sizeof(int));
 	while (str[i] != '\0')
 	{
-		buffer[str[i]]++;
+		buffer[str[i]]++;//increments the buffer if the character occurs more than once
 		i++;
 	}
 	j = 0;

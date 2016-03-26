@@ -1,3 +1,4 @@
+/*to check whether 2 strings are anagrams or not*/
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<conio.h>
@@ -25,8 +26,8 @@ bool isanagram(char *str1, char *str2)
 	buffer2 = (int*)calloc(256 , sizeof(int));
 	for (i = 0; str1[i] && str2[i]; i++)
 	{
-		buffer1[str1[i]]++;
-		buffer2[str2[i]]++;
+		buffer1[str1[i]]++;//takes buffers that count the characters 
+		buffer2[str2[i]]++;//if each character count is equal then they are anagrams to each other
 	}
 	if (str1[i] || str2[i])
 		return false;
